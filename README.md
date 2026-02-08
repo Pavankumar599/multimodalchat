@@ -67,6 +67,45 @@ You must run both in separate terminals.
 ```bash
 git clone https://github.com/<your-username>/multimodal-chat.git
 cd multimodal-chat
+```
+### 2) Backend setup (FastAPI)
+```bash
+cd server
+cp .venv .venv
+```
+Edit .venv and set your OPENAI API key:
+
+Create venv + install:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run backend:
+```bash
+uvicorn app:app --reload --port 8000
+```
+Backend is now running at:
+
+http://localhost:8000
+
+Keep this terminal running.
+
+### 3) Frontend setup (React)
+```bash
+cd web
+npm install
+npm run dev
+```
+Frontend is now running at:
+
+http://localhost:5173
+
+
+
+
+
 
 
 
