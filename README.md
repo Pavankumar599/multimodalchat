@@ -50,7 +50,7 @@ The project keeps a session per user in memory.
 
 This is important because real users almost always iterate (first output is rarely perfect).
 
-
+# =========================================================================================
 # How to Execute (macOS + Windows)
 
 This project has two parts:
@@ -60,7 +60,7 @@ This project has two parts:
 You must run both in separate terminals.
 
 ---
-
+# =========================================================================================
 ## ✅ macOS (zsh) / Linux
 
 ### 1) Clone repo
@@ -102,8 +102,50 @@ Frontend is now running at:
 
 http://localhost:5173
 
+# =========================================================================================
+### ✅ Windows (PowerShell)
+#
+## 1) Clone repo
+```bash
+git clone https://github.com/<your-username>/multimodal-chat.git
+cd multimodal-chat
+```
 
+# 2) Backend setup (FastAPI)
+``` bash
+cd server
+Copy-Item .venv .venv
+```
 
+Edit .venv and set:
+
+Create venv + install
+```bsh
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+Run backend
+```bash
+uvicorn app:app --reload --port 8000
+```
+
+Backend is now running at:
+
+http://localhost:8000
+
+Keep this terminal running.
+
+# 3) Frontend setup (React)
+```bash
+cd web
+npm install
+npm run dev
+```
+Frontend is now running at:
+
+http://localhost:5173
 
 
 
