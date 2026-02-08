@@ -50,7 +50,7 @@ The project keeps a session per user in memory.
 
 This is important because real users almost always iterate (first output is rarely perfect).
 
-# =========================================================================================
+# =======================================
 # How to Execute (macOS + Windows)
 
 This project has two parts:
@@ -60,7 +60,7 @@ This project has two parts:
 You must run both in separate terminals.
 
 ---
-# =========================================================================================
+# =========================================
 ## ✅ macOS (zsh) / Linux
 
 ### 1) Clone repo
@@ -102,7 +102,7 @@ Frontend is now running at:
 
 http://localhost:5173
 
-# =========================================================================================
+# =======================================
 ### ✅ Windows (PowerShell)
 #
 ## 1) Clone repo
