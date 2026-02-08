@@ -49,3 +49,24 @@ The project keeps a session per user in memory.
 - **Video**: generates the first video, then uses remix/variation for follow-up improvements
 
 This is important because real users almost always iterate (first output is rarely perfect).
+
+
+# How to Execute (macOS + Windows)
+
+This project has two parts:
+- **Backend (FastAPI, Python)** → runs on `http://localhost:8000`
+- **Frontend (React, Vite)** → runs on `http://localhost:5173`
+
+You must run both in separate terminals.
+
+---
+
+## ✅ macOS (zsh) / Linux
+
+### 1) Clone repo
+```bash
+git clone https://github.com/<your-username>/multimodal-chat.git
+cd multimodal-chat
+
+
+
